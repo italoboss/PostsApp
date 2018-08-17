@@ -15,6 +15,13 @@
 		BE03159F21272DE200FD8CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE03159D21272DE200FD8CC3 /* LaunchScreen.storyboard */; };
 		BE0315A72127336E00FD8CC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315A62127336E00FD8CC3 /* Constants.swift */; };
 		BE0315A92127343F00FD8CC3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */; };
+		BE0315AC21273BD500FD8CC3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315AB21273BD500FD8CC3 /* Repository.swift */; };
+		BE0315AE21273C2A00FD8CC3 /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315AD21273C2A00FD8CC3 /* PostsRepository.swift */; };
+		BE0315B021273D1F00FD8CC3 /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315AF21273D1F00FD8CC3 /* CommentsRepository.swift */; };
+		BE0315B32127623400FD8CC3 /* PostsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B22127623400FD8CC3 /* PostsDAO.swift */; };
+		BE0315B5212762F500FD8CC3 /* PostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B4212762F500FD8CC3 /* PostsAPI.swift */; };
+		BE0315B72127636F00FD8CC3 /* CommentsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B62127636F00FD8CC3 /* CommentsDao.swift */; };
+		BE0315B9212763FD00FD8CC3 /* CommentsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		BE0315A021272DE200FD8CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0315A62127336E00FD8CC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		BE0315AB21273BD500FD8CC3 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BE0315AD21273C2A00FD8CC3 /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		BE0315AF21273D1F00FD8CC3 /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
+		BE0315B22127623400FD8CC3 /* PostsDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDAO.swift; sourceTree = "<group>"; };
+		BE0315B4212762F500FD8CC3 /* PostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPI.swift; sourceTree = "<group>"; };
+		BE0315B62127636F00FD8CC3 /* CommentsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDao.swift; sourceTree = "<group>"; };
+		BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 		BE03159021272DE100FD8CC3 /* PostsApp */ = {
 			isa = PBXGroup;
 			children = (
+				BE0315AA2127373200FD8CC3 /* Repositories */,
 				BE03159121272DE100FD8CC3 /* AppDelegate.swift */,
 				BE03159321272DE100FD8CC3 /* ViewController.swift */,
 				BE03159521272DE100FD8CC3 /* Main.storyboard */,
@@ -71,6 +86,28 @@
 				BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */,
 			);
 			path = PostsApp;
+			sourceTree = "<group>";
+		};
+		BE0315AA2127373200FD8CC3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BE0315B121273FA600FD8CC3 /* Models */,
+				BE0315AB21273BD500FD8CC3 /* Repository.swift */,
+				BE0315AD21273C2A00FD8CC3 /* PostsRepository.swift */,
+				BE0315AF21273D1F00FD8CC3 /* CommentsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BE0315B121273FA600FD8CC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE0315B22127623400FD8CC3 /* PostsDAO.swift */,
+				BE0315B4212762F500FD8CC3 /* PostsAPI.swift */,
+				BE0315B62127636F00FD8CC3 /* CommentsDao.swift */,
+				BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +181,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0315B32127623400FD8CC3 /* PostsDAO.swift in Sources */,
 				BE03159421272DE100FD8CC3 /* ViewController.swift in Sources */,
+				BE0315B021273D1F00FD8CC3 /* CommentsRepository.swift in Sources */,
 				BE03159A21272DE100FD8CC3 /* PostsApp.xcdatamodeld in Sources */,
+				BE0315B9212763FD00FD8CC3 /* CommentsApi.swift in Sources */,
+				BE0315B5212762F500FD8CC3 /* PostsAPI.swift in Sources */,
+				BE0315AE21273C2A00FD8CC3 /* PostsRepository.swift in Sources */,
 				BE03159221272DE100FD8CC3 /* AppDelegate.swift in Sources */,
+				BE0315B72127636F00FD8CC3 /* CommentsDao.swift in Sources */,
 				BE0315A92127343F00FD8CC3 /* CoreDataManager.swift in Sources */,
 				BE0315A72127336E00FD8CC3 /* Constants.swift in Sources */,
+				BE0315AC21273BD500FD8CC3 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
