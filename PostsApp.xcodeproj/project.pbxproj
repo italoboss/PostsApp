@@ -13,6 +13,8 @@
 		BE03159A21272DE100FD8CC3 /* PostsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE03159821272DE100FD8CC3 /* PostsApp.xcdatamodeld */; };
 		BE03159C21272DE200FD8CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE03159B21272DE200FD8CC3 /* Assets.xcassets */; };
 		BE03159F21272DE200FD8CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE03159D21272DE200FD8CC3 /* LaunchScreen.storyboard */; };
+		BE0315A72127336E00FD8CC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315A62127336E00FD8CC3 /* Constants.swift */; };
+		BE0315A92127343F00FD8CC3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BE03159B21272DE200FD8CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE03159E21272DE200FD8CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0315A021272DE200FD8CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0315A62127336E00FD8CC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BE03159D21272DE200FD8CC3 /* LaunchScreen.storyboard */,
 				BE0315A021272DE200FD8CC3 /* Info.plist */,
 				BE03159821272DE100FD8CC3 /* PostsApp.xcdatamodeld */,
+				BE0315A62127336E00FD8CC3 /* Constants.swift */,
+				BE0315A82127343F00FD8CC3 /* CoreDataManager.swift */,
 			);
 			path = PostsApp;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				BE03159421272DE100FD8CC3 /* ViewController.swift in Sources */,
 				BE03159A21272DE100FD8CC3 /* PostsApp.xcdatamodeld in Sources */,
 				BE03159221272DE100FD8CC3 /* AppDelegate.swift in Sources */,
+				BE0315A92127343F00FD8CC3 /* CoreDataManager.swift in Sources */,
+				BE0315A72127336E00FD8CC3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
