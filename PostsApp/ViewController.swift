@@ -10,16 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let postRepository = PostsRepository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func didSyncApi(_ sender: Any) {
+        postRepository.syncApi()
     }
 
-
+    @IBAction func printObjects(_ sender: Any) {
+        let all = postRepository.getAll()
+        print(all.count)
+        for post in all {
+            print(post.comments?.count ?? "_")
+        }
+        
+        let comments = CommentsDao().fetchAll(of: 0)
+        print(comments.count)
+    }
+    
 }
 

@@ -22,6 +22,8 @@
 		BE0315B5212762F500FD8CC3 /* PostsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B4212762F500FD8CC3 /* PostsAPI.swift */; };
 		BE0315B72127636F00FD8CC3 /* CommentsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B62127636F00FD8CC3 /* CommentsDao.swift */; };
 		BE0315B9212763FD00FD8CC3 /* CommentsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */; };
+		BE0315BC212AFA5400FD8CC3 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0315BB212AFA5400FD8CC3 /* Posts.swift */; };
+		BE72312C212B16C80099DE07 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE72312B212B16C80099DE07 /* Comments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		BE0315B4212762F500FD8CC3 /* PostsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPI.swift; sourceTree = "<group>"; };
 		BE0315B62127636F00FD8CC3 /* CommentsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsDao.swift; sourceTree = "<group>"; };
 		BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsApi.swift; sourceTree = "<group>"; };
+		BE0315BB212AFA5400FD8CC3 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		BE72312B212B16C80099DE07 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		BE0315AA2127373200FD8CC3 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				BE0315BA212AFA0D00FD8CC3 /* Dto */,
 				BE0315B121273FA600FD8CC3 /* Models */,
 				BE0315AB21273BD500FD8CC3 /* Repository.swift */,
 				BE0315AD21273C2A00FD8CC3 /* PostsRepository.swift */,
@@ -108,6 +113,15 @@
 				BE0315B8212763FD00FD8CC3 /* CommentsApi.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BE0315BA212AFA0D00FD8CC3 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				BE0315BB212AFA5400FD8CC3 /* Posts.swift */,
+				BE72312B212B16C80099DE07 /* Comments.swift */,
+			);
+			path = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +198,10 @@
 				BE0315B32127623400FD8CC3 /* PostsDAO.swift in Sources */,
 				BE03159421272DE100FD8CC3 /* ViewController.swift in Sources */,
 				BE0315B021273D1F00FD8CC3 /* CommentsRepository.swift in Sources */,
+				BE72312C212B16C80099DE07 /* Comments.swift in Sources */,
 				BE03159A21272DE100FD8CC3 /* PostsApp.xcdatamodeld in Sources */,
 				BE0315B9212763FD00FD8CC3 /* CommentsApi.swift in Sources */,
+				BE0315BC212AFA5400FD8CC3 /* Posts.swift in Sources */,
 				BE0315B5212762F500FD8CC3 /* PostsAPI.swift in Sources */,
 				BE0315AE21273C2A00FD8CC3 /* PostsRepository.swift in Sources */,
 				BE03159221272DE100FD8CC3 /* AppDelegate.swift in Sources */,

@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum Config {
+class Config {
     static let baseURL = NSURL(string: "https://jsonplaceholder.typicode.com/")!
 }
